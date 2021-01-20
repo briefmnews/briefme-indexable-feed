@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="briefme-indexable-feed",
-    version="0.0.1",
+    version="0.1",
     description="indexable-feed base for Brief.me projects",
     url="https://github.com/briefmnews/briefme-editorial",
     author="Brief.me",
