@@ -1,3 +1,4 @@
+from bleach import clean
 from collections import OrderedDict
 from django.utils.html import strip_tags
 from rest_framework import serializers
@@ -36,4 +37,15 @@ def extract_indexable_content(data, fields):
         else:
             if k in fields:
                 searchable += f" {v}"
-    return strip_tags(searchable).strip()
+    return searchable
+
+
+def get_indexable_content(data, fields):
+    indexable_content = extract_indexable_content(data, fields)
+    return strip_tags(indexable_content).strip()
+
+
+def get_summary_content(data, fields):
+    content = extract_indexable_content(data, fields)
+    data = clean(content, tags=["br"], strip=True).strip()
+    return data.split("<br>")[0]
