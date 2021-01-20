@@ -7,14 +7,9 @@ setup(
     url="https://github.com/briefmnews/briefme-editorial",
     author="Brief.me",
     author_email="tech@brief.me",
-    packages=[
-        "briefme_indexable_feed"
-    ],
+    packages=["briefme_indexable_feed"],
     python_requires=">=3.7",
-    install_requires=[
-        "Django>=2.2",
-        "djangorestframework>=3.10.0",
-    ],
+    install_requires=["Django>=2.2", "djangorestframework>=3.10.0", "bleach>=3.2"],
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Django",
