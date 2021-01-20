@@ -1,6 +1,6 @@
 import pytest
 
-from briefme_indexable_feed.serializers import extract_indexable_content
+from briefme_indexable_feed.serializers import get_indexable_content
 
 pytestmark = pytest.mark.django_db
 
@@ -11,7 +11,7 @@ class TestExtractIndexableCotent:
         fields = ["title", "text"]
 
         # WHEN
-        response = extract_indexable_content(data, fields)
+        response = get_indexable_content(data, fields)
 
         # THEN
         assert "<p>" not in response
