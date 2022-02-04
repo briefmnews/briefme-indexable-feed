@@ -10,3 +10,6 @@ INSTALLED_APPS = (
 )
 
 DATABASES = {"default": {"ENGINE": "django.db.backends.sqlite3"}}
+
+INDEXABLE_FEED_ACCESS_TOKEN = "test"
+
