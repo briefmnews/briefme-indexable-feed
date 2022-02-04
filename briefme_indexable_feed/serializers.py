@@ -5,7 +5,7 @@ from rest_framework import serializers
 
 
 class BaseIndexableFeedSerializer(serializers.Serializer):
-    """ Serializer that renders each instance with its own specific serializer """
+    """Serializer that renders each instance with its own specific serializer"""
 
     def get_serializer(self, model):
         serializer_classes = self.context["serializer_classes"]
