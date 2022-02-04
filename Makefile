@@ -12,3 +12,7 @@ report:
 
 install:
 	pip install -r requirements.txt
+
+release:
+	git tag -a $(shell python -c "from briefme_indexable_feed import __version__; print(__version__)") -m "$(m)"
+	git push origin --tags
