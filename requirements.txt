@@ -1,9 +1,9 @@
-black==19.10b0
-bleach==3.2.1
-Django==2.2.17
-djangorestframework==3.12.2
-ipdb==0.13.4
-pytest==4.4.1
-pytest-cov==2.6.1
-pytest-django==3.4.8
+black==22.1.0
+bleach==4.1.0
+Django==2.2.27
+djangorestframework==3.13.1
+ipdb==0.13.9
+pytest==6.2.5
+pytest-cov==3.0.0
+pytest-django==4.5.2
 pytest-pythonpath==0.7.3
