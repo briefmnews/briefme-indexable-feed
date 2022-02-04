@@ -1,8 +1,10 @@
 from setuptools import setup
 
+from briefme_indexable_feed import __version__
+
 setup(
     name="briefme-indexable-feed",
-    version="0.1",
+    version=__version__,
     description="indexable-feed base for Brief.me projects",
     url="https://github.com/briefmnews/briefme-editorial",
     author="Brief.me",
