@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 from briefme_indexable_feed import __version__
 
@@ -9,7 +9,7 @@ setup(
     url="https://github.com/briefmnews/briefme-indexable-feed",
     author="Brief.me",
     author_email="tech@brief.me",
-    packages=["briefme_indexable_feed"],
+    packages=find_packages(exclude="tests"),
     python_requires=">=3.7",
     install_requires=["Django>=2.2", "djangorestframework>=3.10.0", "bleach>=3.2"],
     classifiers=[
