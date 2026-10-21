@@ -7,6 +7,7 @@ INSTALLED_APPS = (
     "django.contrib.sites",
     "django.contrib.admin",
     "briefme_indexable_feed",
+    "tests",
 )
 
 DATABASES = {"default": {"ENGINE": "django.db.backends.sqlite3"}}
